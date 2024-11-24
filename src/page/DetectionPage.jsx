@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/LungCancerDetection.css';
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "https://api.infinitydestudio.online";
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 const LungCancerDetection = () => {
@@ -64,7 +64,6 @@ const LungCancerDetection = () => {
         },
         body: formData
       });
-      console.log(API_URL)
       
       const data = await response.json();
 
