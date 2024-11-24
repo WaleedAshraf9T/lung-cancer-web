@@ -1,0 +1,58 @@
+/* LungCancerDetection.css */
+.drop-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 256px;
+    border: 2px dashed #dee2e6;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+  
+  .drop-zone:hover {
+    background-color: #e9ecef;
+  }
+  
+  .drop-zone-active {
+    border-color: #0d6efd;
+    background-color: #e7f1ff;
+  }
+  
+  .upload-icon {
+    width: 32px;
+    height: 32px;
+    color: #6c757d;
+  }
+  
+  .preview-image {
+    max-height: 256px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .details-pre {
+    font-size: 0.875rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  
+  /* Animation for spinner */
+  @keyframes spinner-border {
+    to { transform: rotate(360deg); }
+  }
+  
+  .spinner-border {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+  }
